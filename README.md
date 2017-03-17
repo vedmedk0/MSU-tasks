@@ -2,7 +2,7 @@
 Tasks for the pycourse MSU
 # To do list
 
-Implement safe change working directory as context manager. - done by 2 ways
+*** Implement safe change working directory as context manager. - done by 2 ways
 
 Create small app, that takes (1) some file as template for a web page and (2) several command line arguments values as values for that template. Generate output html file with substituted template fields.
 
