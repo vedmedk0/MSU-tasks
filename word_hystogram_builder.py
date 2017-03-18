@@ -12,6 +12,10 @@ def WordHystogramBuilder(*args):
     for file in args: #для всех файлов - в этом цикле составляем словарь
         with open(file) as fin: #контекстный менедджер для безопасного открытия файла
             text = fin.read() #читаем текст из файла
+        for c in [',','.','"','/','!','?',"'",':',';','(',')','[',']']:
+            text=text.replace(c,'') # убираем знаки препинания
+        for c in ['/','\\','\n']:
+             text=text.replace(c,' ') #знаки препинания которые заменятся пробелом
         text=text.split(' ') # превращаем текст в список слов
         for word in text: # добавляем слова в словарь
             if word in Hyst: #Если есть слово увеличиваем счетчик словарь
@@ -34,4 +38,4 @@ def Invert_Dict(d): #функция инверсии словаря
         else:inv[val].append(key) #если есть - добавить значение к текущим
     return inv
 
-WordHystogramBuilder('test.txt', 'test1.txt','test2.txt')
+WordHystogramBuilder('Texts (1).txt')
