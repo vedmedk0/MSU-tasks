@@ -13,7 +13,7 @@ class SafeChdir():
         print('im gonna change directory!')
 
     def __enter__(self):
-        self.savedPath = os.getcwd() # cохраняем старый путь. self.savedPath  - what? Непонятно.
+        self.savedPath = os.getcwd() # cохраняем старый путь. self.savedPath - новая переменная в объекте self
         os.chdir(self.newPath) # меняем папку
         print('im changed directory!')
 
@@ -23,7 +23,7 @@ class SafeChdir():
         
         
         
-""" test """
+#test
 
 
 with SafeChdir('C:\\Users\\VedMedk0\\Music'):
