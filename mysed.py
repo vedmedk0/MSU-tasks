@@ -5,14 +5,6 @@ Created on Fri Mar 17 23:37:16 2017
 @author: VedMedk0
 """
 
-import sys
-
-class WrongFileCommand(Exception):
-     def __init__(self, value):
-         self.value = value
-     def __str__(self):
-         return repr(self.value)
-
 #right_input = True
 text=''
 print("Welcome to SED! If you want open file, print '/o %filename%' \n If you want write text manually, enter '/m %text%' \n If you want to see help enter /h \n if you want to exit enter /e : ")
