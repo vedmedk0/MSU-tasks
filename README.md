@@ -19,7 +19,7 @@ Create tool that takes file with list of urls and a map of { stop-word : value }
 
 Implement tool for lottery: it can generate list of lottery tickets numbers and write it to file, then determine several winners from list of numbers in file.
 
-#done list
+# done list
 
 Implement safe change working directory as context manager (2 ways)
 
