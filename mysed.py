@@ -42,8 +42,8 @@ while True:
     elif command[0:2] == '/s': #coхранить в файл
         with open(command[3:len(command)], 'tw', encoding='utf-8') as f: #завести в открытой папке ненужный файл
             f.write(text)
-    elif command[0:2] == '/h':
-        print('Replace/delete string1 with string2 : /r/string1/string2 \n Exit: /e \n Print: /p \n Save: /s %filename%')
+    elif command[0:2] == '/h': #помощь
+        print('Replace string1 with string2(or nothing, if empty) : /r/string1/string2 \n Exit: /e \n Print: /p \n Save: /s %filename%')
     else:
         print('Whoops! Wrong command.')
 print ('bye')
