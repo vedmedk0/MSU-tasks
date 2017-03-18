@@ -2,7 +2,6 @@
 Tasks for the pycourse MSU
 # work in progress list
 
-Implement words histogram builder. It takes one or more files as input arguments and produces output file with lines «num word» sorted by descent
 
 # To do list
 
@@ -24,3 +23,5 @@ Implement tool for lottery: it can generate list of lottery tickets numbers and 
 Implement safe change working directory as context manager (2 ways)
 
 Implement simple sed
+
+Implement words histogram builder. It takes one or more files as input arguments and produces output file with lines «num word» sorted by descent
