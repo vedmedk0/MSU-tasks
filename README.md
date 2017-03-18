@@ -2,7 +2,7 @@
 Tasks for the pycourse MSU
 # work in progress list
 
-Implement words histogram builder. It takes one or more files as input arguments and produces output file with lines «num word» sorted by descent - Work in progress
+Implement words histogram builder. It takes one or more files as input arguments and produces output file with lines «num word» sorted by descent
 
 # To do list
 
