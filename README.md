@@ -13,7 +13,7 @@ Implement words histogram builder. It takes one or more files as input arguments
 
 Implement task manager with json file as storage
 
-Implement simple sed
+Implement simple sed - Work in progress
 
 Implement simple batch file renamer
 
