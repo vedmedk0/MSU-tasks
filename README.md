@@ -2,7 +2,7 @@
 Tasks for the pycourse MSU
 # To do list
 
-*** Implement safe change working directory as context manager. - done by 2 ways
+** Implement safe change working directory as context manager**. - done by 2 ways
 
 Create small app, that takes (1) some file as template for a web page and (2) several command line arguments values as values for that template. Generate output html file with substituted template fields.
 
@@ -13,7 +13,7 @@ Implement words histogram builder. It takes one or more files as input arguments
 
 Implement task manager with json file as storage
 
-Implement simple sed - Work in progress
+** Implement simple sed** - Done (may be)
 
 Implement simple batch file renamer
 
