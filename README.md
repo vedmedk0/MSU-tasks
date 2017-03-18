@@ -9,7 +9,7 @@ Create small app, that takes (1) some file as template for a web page and (2) se
 Implement 2-4-6 experiment: app generates (or loads from predefined ones) rule applying to triples of numbers. User can test as many triplets as he want, then check whether his hypothesis about rule is correct.
 
 
-Implement words histogram builder. It takes one or more files as input arguments and produces output file with lines «num word» sorted by descent
+Implement words histogram builder. It takes one or more files as input arguments and produces output file with lines «num word» sorted by descent - Work in progress
 
 Implement task manager with json file as storage
 
