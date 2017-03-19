@@ -12,7 +12,7 @@ def WordHystogramBuilder(*args):
     for file in args: #для всех файлов - в этом цикле составляем словарь
         with open(file) as fin: #контекстный менедджер для безопасного открытия файла
             text = fin.read() #читаем текст из файла
-        for c in [',','.','"','/','!','?',"'",':',';','(',')','[',']']:
+        for c in [',','.','"','/','!','?',"'",':',';','(',')','[',']','<','>']:
             text=text.replace(c,'') # убираем знаки препинания
         for c in ['/','\\','\n']:
              text=text.replace(c,' ') #знаки препинания которые заменятся пробелом
@@ -22,6 +22,7 @@ def WordHystogramBuilder(*args):
                 Hyst[word] += 1
             else: #если нет - заводим новую пару
                 Hyst[word]=1
+    del Hyst[''] # костыль для того чтобы убрать слово ''
     Hyst=Invert_Dict(Hyst) #Инвертируем словарь для удобного вывода
     with open('WordHyst.txt', 'tw', encoding='utf-8') as f: #завести в открытой папке ненужный файл
         for i in sorted(Hyst.keys(),reverse=True): #i проходит по всем значениям в порядке убывания
@@ -38,4 +39,4 @@ def Invert_Dict(d): #функция инверсии словаря
         else:inv[val].append(key) #если есть - добавить значение к текущим
     return inv
 
-WordHystogramBuilder('Texts (1).txt')
+WordHystogramBuilder('Texts (1).txt','test.txt','test1.txt','test2.txt')
