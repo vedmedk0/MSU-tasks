@@ -28,7 +28,7 @@ def GetDatafrom(time):#возвращает давление, температу
     else: humidity=int(raws[3].split('<',1)[0])
     return (pressure,temperature,humidity)
 
-def PastWeatherData (days_ago):
+def PastWeatherData (days_ago): #погода за days_ago дней 
     DT=dt.timedelta(hours=3) #данные обновляются каждые 3 часа
     now = dt.datetime.now() #настоящее время
     now = now.replace(second=0,minute=0,hour=now.hour-now.hour % 3) #часы должны быть кратны трем
